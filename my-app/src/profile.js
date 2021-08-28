@@ -47,3 +47,4 @@ class profile extends React.Component{
         )
     }
 }
+export default profile
