@@ -32,21 +32,21 @@ function App() {
 		 })
 		};
 
-		//  const signUp = () => {
-		// 	fire
-		// 	.auth()
-		// 	.createUserWithEmailAndPassword(email, password)
-		// 	.catch(err => {
-		// 	   switch(err.code) {
-		// 	   case "auth/email-already-in-use":
-		// 	   case "auth/Invaild-email":
-		// 	   case "auth/wrong-password":
-		// 		   setPasswordError(err.message);
-		// 		   break;
-		// 	   }
+		 const signUp = () => {
+			fire
+			.auth()
+			.createUserWithEmailAndPassword(email, password)
+			.catch(err => {
+			   switch(err.code) {
+			   case "auth/email-already-in-use":
+			   case "auth/Invaild-email":
+			   case "auth/wrong-password":
+				   setPasswordError(err.message);
+				   break;
+			   }
 
-		// 	})
-		//  };
+			})
+		 };
 
 		//  const signOut = () => {
 		// 	 fire.auth()
