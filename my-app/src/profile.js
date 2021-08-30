@@ -46,5 +46,24 @@ class profile extends React.Component{
             </div>
         )
     }
+
+    getProfile(){
+        var self = this;
+        axios.post('/getProfile',{
+    
+        })
+        .then(function (respons){
+            if(response){
+                self.setState({name:response.data.name});
+                self.setState({email:response.data.email});
+                self.setState({password:response.data.password});
+    
+            }
+        })
+        .catch(function (error) {
+            console.log('error is ',error)
+        })
+    }
 }
-export default profile
+
+export default profile.js;
